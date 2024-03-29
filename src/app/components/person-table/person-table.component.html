@@ -1,4 +1,9 @@
-<div class="d-flex flex-column align-items-center  ">
+<div class="d-flex flex-column align-items-center">
+  @if(!person) {
+    <div class="alert alert-danger text-center">
+      No person details available!
+    </div>
+  } @else {
    <table class="table table-bordered w-50">
      <caption class="caption-top fw-bold bg-primary text-light text-center">
        Person Details
@@ -17,7 +22,13 @@
      </tr>
      <tr>
        <td class="fw-semibold text-end">Email</td>
-       <td class="ps-2">{{ person.email }}</td>
+       <td class="ps-2 text-start">{{ person.email }}</td>
      </tr>
+     <tr>
+      <td class="fw-semibold text-end">Address</td>
+      <td class="ps-2 text-start">{{ person.address }}</td>
+    </tr>
    </table>
+  }
  </div>
+
