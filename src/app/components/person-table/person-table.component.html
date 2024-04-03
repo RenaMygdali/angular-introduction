@@ -24,10 +24,18 @@
        <td class="fw-semibold text-end">Email</td>
        <td class="ps-2 text-start">{{ person.email }}</td>
      </tr>
-     <tr>
-      <td class="fw-semibold text-end">Address</td>
-      <td class="ps-2 text-start">{{ person.address }}</td>
-    </tr>
+     @if(isPerson()) {
+      <tr>
+        <td class="fw-semibold text-end">Address</td>
+        <td class="ps-2 text-start">{{ person['address'] }}</td>
+      </tr>
+     }
+     @if(isEPerson()) {
+      <tr>
+        <td class="fw-semibold text-end">Education</td>
+        <td class="ps-2 text-start">{{ person['education'] }}</td>
+      </tr>
+     }
    </table>
   }
  </div>
