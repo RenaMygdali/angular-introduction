@@ -256,7 +256,7 @@
   1. Ενημέρωση του αρχείου `app.routes.ts`
   2. Ενημέρωση του html μενού με τις κατάλληλες οδηγίες `routerLink`
 
-  ## Βήμα 7: Fancy App Menu με το [list-group](https://t.ly/vmYc2) του Bootstrap
+## Βήμα 7: Fancy App Menu με το [list-group](https://t.ly/vmYc2) του Bootstrap
 
 - Δημιουργία νέου interface `MenuItem` στο αρχείο `shared/interfaces/menu-item.ts`:
 
@@ -283,7 +283,7 @@
   ];
   ```
 
-  ## Βήμα 8: Simple Datatable
+## Βήμα 8: Simple Datatable
 
 - Χρήση του https://cobbl.io/ για να παράξουμε ένα πίνακα με πολλά δεδομένα τύπου `ΕPerson` που ορίζουμε στο `/shared/interfaces/person.ts`:
 
