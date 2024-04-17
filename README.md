@@ -185,7 +185,7 @@
   }
   ```
 
-  ## Βήμα 5: Event binding
+## Βήμα 5: Event binding
 
 - Δέσμευση μεθόδου της κλάσης (event handler) στο συμβάν `event` του template με χρήση του `(eventName)="onEventName($event)"`
 
