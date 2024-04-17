@@ -174,8 +174,6 @@
   <app-person-table [person]="person1"></app-person-table>
   ```
 
-````
-
 ## Βήμα 4: @for Template Directive
 
 - Ορισμός χαρακτηριστικού `persons` τύπου `Person[]` στην κλάση `AppComponent` (πίνακας αντικειμένων τύπου `Person`)
