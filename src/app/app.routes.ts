@@ -13,6 +13,11 @@ import { RestrictedContentExampleComponent } from './components/restricted-conte
 import { authGuard } from './shared/guards/auth.guard';
 import { UserLoginComponent } from './components/user-login/user-login.component';
 import { FunForNerdsComponent } from './components/fun-for-nerds/fun-for-nerds/fun-for-nerds.component';
+import { CrudDashboardComponent } from './components/crud/crud-dashboard/crud-dashboard.component';
+import { CrudCreateExampleComponent } from './components/crud/crud-create-example/crud-create-example.component';
+import { CrudReadExampleComponent } from './components/crud/crud-read-example/crud-read-example.component';
+import { CrudUpdateExampleComponent } from './components/crud/crud-update-example/crud-update-example.component';
+import { CrudDeleteExampleComponent } from './components/crud/crud-delete-example/crud-delete-example.component';
 
 
 export const routes: Routes = [
@@ -30,6 +35,12 @@ export const routes: Routes = [
       canActivate: [authGuard]},
    {path: 'login', component: UserLoginComponent},
    {path: 'fun-for-nerds', component: FunForNerdsComponent},
+   {path: 'crud-example', component:CrudDashboardComponent, canActivate: [authGuard]},
+   {path: 'crud-example', component:CrudDashboardComponent},
+   {path: 'crud-example/create', component:CrudCreateExampleComponent},
+   {path: 'crud-example/read', component:CrudReadExampleComponent},
+   {path: 'crud-example/update', component:CrudUpdateExampleComponent},
+   {path: 'crud-example/delete', component:CrudDeleteExampleComponent},
    {path: '', component: WelcomeComponent}
    // {path: '', redirectTo: "/welcome", pathMatch: 'full'}
 ];
